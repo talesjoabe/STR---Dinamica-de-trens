@@ -6,11 +6,6 @@ from train import *
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
-
-def draw_train(xc, yc, width, height, colour):
-	arcade.draw_rectangle_filled(xc, yc, width, height , colour)
-
-
 class MyGame(arcade.Window):
 	def __init__(self,width,height):
 		super().__init__(width, height)
