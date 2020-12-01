@@ -8,17 +8,25 @@ def drawRails():
 	arcade.draw_rectangle_outline(335, 450, 105, 65,arcade.color.RED)
 	arcade.draw_rectangle_outline(225, 380, 325, 65,arcade.color.BLUE)
 
-def drawControlVelocity():
-	arcade.draw_rectangle_filled(80, 100, 15, 125, arcade.color.ELECTRIC_GREEN)
-	arcade.draw_rectangle_filled(140, 100, 15, 125, arcade.color.PURPLE)
-	arcade.draw_rectangle_filled(200, 100, 15, 125, arcade.color.RED)
-	arcade.draw_rectangle_filled(260, 100, 15, 125, arcade.color.BLUE)
+def drawVelocityBoard(velocidade1, velocidade2,velocidade3,velocidade4):
+	arcade.draw_text("Q: Acelera", 50, 70, arcade.color.ELECTRIC_GREEN, 10)
+	arcade.draw_text("A: Desacelera", 50, 50, arcade.color.ELECTRIC_GREEN, 10)
+	
+	arcade.draw_text("W: Acelera", 180, 70, arcade.color.PURPLE, 10)
+	arcade.draw_text("S: Desacelera", 180, 50, arcade.color.PURPLE, 10)
 
-def drawControlVelocityButton():
-	# BOTAO DE CONTROLE DO VELOCIMETRO
-	arcade.draw_point(80, 60, arcade.color.ELECTRIC_GREEN, 30)
-	arcade.draw_point(140, 60, arcade.color.PURPLE, 30)
-	arcade.draw_point(200, 60, arcade.color.RED, 30)
-	arcade.draw_point(260, 60, arcade.color.BLUE, 30)
+	arcade.draw_text("E: Acelera", 310, 70, arcade.color.RED, 10)
+	arcade.draw_text("D: Desacelera", 310, 50, arcade.color.RED, 10)
+
+	arcade.draw_text("R: Acelera", 440, 70, arcade.color.BLUE, 10)
+	arcade.draw_text("F: Desacelera", 440, 50, arcade.color.BLUE, 10)
+
+	arcade.draw_text(velocidade1, 50, 120, arcade.color.ELECTRIC_GREEN, 20)
+	arcade.draw_text(velocidade2, 180, 120, arcade.color.PURPLE, 20)
+	arcade.draw_text(velocidade3, 310, 120, arcade.color.RED, 20)
+	arcade.draw_text(velocidade4, 440, 120, arcade.color.BLUE, 20)
+
+
+
 
 
